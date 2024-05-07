@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f72276-e750-4bbf-bcf5-8d044e28f5b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/raoGasStation.java" afterDir="false" />
-    </list>
+    <list default="true" id="89f72276-e750-4bbf-bcf5-8d044e28f5b2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715082385113</updated>
       <workItem from="1715082386232" duration="981000" />
-      <workItem from="1715100884584" duration="670000" />
+      <workItem from="1715100884584" duration="1350000" />
     </task>
     <servers />
   </component>
