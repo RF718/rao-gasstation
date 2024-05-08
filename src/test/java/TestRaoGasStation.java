@@ -44,9 +44,7 @@ class RaoGasStationTest {
         GasPump pump = new GasPump(GasType.REGULAR, 100.0);
         station.addGasPump(pump);
         station.setPrice(GasType.REGULAR, 1.50);
-        assertThrows(NotEnoughGasException.class, () -> {
-            station.buyGas(GasType.REGULAR, 200.0, 2.00);
-        }, "Should throw NotEnoughGasException because there is not enough gas");
+        assertThrows(NotEnoughGasException.class, () -> station.buyGas(GasType.REGULAR, 200.0, 2.00), "Should throw NotEnoughGasException because there is not enough gas");
     }
 
     @Test
@@ -54,9 +52,7 @@ class RaoGasStationTest {
         GasPump pump = new GasPump(GasType.REGULAR, 1000.0);
         station.addGasPump(pump);
         station.setPrice(GasType.REGULAR, 3.00);
-        assertThrows(GasTooExpensiveException.class, () -> {
-            station.buyGas(GasType.REGULAR, 100.0, 2.00);
-        }, "Should throw GasTooExpensiveException because the price is too high");
+        assertThrows(GasTooExpensiveException.class, () -> station.buyGas(GasType.REGULAR, 100.0, 2.00), "Should throw GasTooExpensiveException because the price is too high");
     }
 
     @Test
@@ -66,7 +62,7 @@ class RaoGasStationTest {
     }
 
     @Test
-    void testConcurrentBuyGas() throws NotEnoughGasException, GasTooExpensiveException {
+    void testConcurrentBuyGas() {
         int threadCount = 105;
         station = new RaoGasStation(threadCount);
         ExecutorService executor = Executors.newFixedThreadPool(threadCount);
@@ -95,10 +91,9 @@ class RaoGasStationTest {
                    System.out.println("Buy gas with type: " + type );
                } catch (GasTooExpensiveException e) {
                    System.out.println("too expensive!");
-               }catch (NotEnoughGasException e){
+               } catch (NotEnoughGasException e){
                    System.out.println("not enough gas!");
-               }
-               finally {
+               } finally {
                    countDownLatch.countDown();
                }
             });
