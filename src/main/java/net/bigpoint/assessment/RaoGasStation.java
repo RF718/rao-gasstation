@@ -39,6 +39,11 @@ public class RaoGasStation implements GasStation {
     private final AtomicInteger numberOfCancellationTooExpensive = new AtomicInteger(0);
 
 
+    /**
+     * Constructor
+     * @param threadCount
+     *                  core pool size
+     */
     public RaoGasStation(int threadCount) {
         this.executorService = new ThreadPoolExecutor(
                                                     threadCount,
@@ -48,6 +53,14 @@ public class RaoGasStation implements GasStation {
                                                     new LinkedBlockingDeque<>()
                                                     );
     }
+
+    /**
+     * Constructor
+     * @param threadCount
+     *                  core pool size
+     * @param pumpList
+     *                  Gaspumps
+     */
     public RaoGasStation(int threadCount,List<GasPump> pumpList) {
         this(threadCount);
         pumpList.forEach(this::addGasPump);
@@ -58,6 +71,7 @@ public class RaoGasStation implements GasStation {
      */
     @Override
     public void addGasPump(GasPump pump) {
+        //Stored in a CopyOnWriterArrayList because there are more read operations.
         pumps.computeIfAbsent(pump.getGasType(),k -> new CopyOnWriteArrayList<>()).add(pump);
     }
 
@@ -90,7 +104,7 @@ public class RaoGasStation implements GasStation {
     @Override
     public double buyGas(GasType type, double amountInLiters, double maxPricePerLiter) throws NotEnoughGasException, GasTooExpensiveException {
         Callable<Double> buyTask = () ->{
-
+            //price comparison
             if(maxPricePerLiter<getPrice(type)){
                 numberOfCancellationTooExpensive.updateAndGet(current ->++current);
                 throw new GasTooExpensiveException();
@@ -100,13 +114,14 @@ public class RaoGasStation implements GasStation {
                 for(GasPump pump : pumpList){
                     if(pump.getRemainingAmount()>=amountInLiters){
                         pump.pumpGas(amountInLiters);
-                        BigDecimal cost = BigDecimal.valueOf(maxPricePerLiter).multiply(BigDecimal.valueOf(amountInLiters)).setScale(2, RoundingMode.HALF_DOWN);
+                        BigDecimal cost = BigDecimal.valueOf(getPrice(pump.getGasType())).multiply(BigDecimal.valueOf(amountInLiters)).setScale(2, RoundingMode.HALF_DOWN);
                         totalRevenue.updateAndGet(current->current.add(cost));
                         numberOfSales.updateAndGet(current ->++current);
                         return cost.doubleValue();
                     }
                 }
             }
+            //no suitable gas pumps
             numberOfCancellationNoGas.updateAndGet(current ->++current);
             throw new NotEnoughGasException();
         };
@@ -180,4 +195,6 @@ public class RaoGasStation implements GasStation {
     public void setPrice(GasType type, double price) {
         priceList.put(type,price);
     }
+
+    //TODO Close the executor（executorService.shutdown()）?
 }

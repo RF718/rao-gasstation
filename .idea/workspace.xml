@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f72276-e750-4bbf-bcf5-8d044e28f5b2" name="Changes" comment="Changes">
+    <list default="true" id="89f72276-e750-4bbf-bcf5-8d044e28f5b2" name="Changes" comment="First edition, untested">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRaoGasStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/raoGasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/RaoGasStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/RaoGasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/RaoGasStation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RF718"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RF718&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:RF718/rao-gasstation.git",
-    "accountId": "abe22ae3-d26b-4a33-a633-f3f8292aa458"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:RF718/rao-gasstation.git&quot;,
+    &quot;accountId&quot;: &quot;abe22ae3-d26b-4a33-a633-f3f8292aa458&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -47,6 +48,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.RaoGasStationTest.executor": "Run",
+    "JUnit.RaoGasStationTest.testBuyGasNormal.executor": "Run",
+    "JUnit.RaoGasStationTest.testBuyGasNotEnoughGasException.executor": "Run",
+    "JUnit.RaoGasStationTest.testBuyGasTooExpensiveException.executor": "Run",
+    "JUnit.RaoGasStationTest.testConcurrentBuyGas.executor": "Run",
+    "JUnit.RaoGasStationTest.testSetAndGetPrice.executor": "Run",
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -65,6 +72,67 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.RaoGasStationTest.testConcurrentBuyGas">
+    <configuration name="RaoGasStationTest.testBuyGasNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rao-gasstation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RaoGasStationTest" />
+      <option name="METHOD_NAME" value="testBuyGasNormal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaoGasStationTest.testBuyGasNotEnoughGasException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rao-gasstation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RaoGasStationTest" />
+      <option name="METHOD_NAME" value="testBuyGasNotEnoughGasException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaoGasStationTest.testBuyGasTooExpensiveException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rao-gasstation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RaoGasStationTest" />
+      <option name="METHOD_NAME" value="testBuyGasTooExpensiveException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaoGasStationTest.testConcurrentBuyGas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rao-gasstation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RaoGasStationTest" />
+      <option name="METHOD_NAME" value="testConcurrentBuyGas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaoGasStationTest.testSetAndGetPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rao-gasstation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RaoGasStationTest" />
+      <option name="METHOD_NAME" value="testSetAndGetPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RaoGasStationTest.testConcurrentBuyGas" />
+        <item itemvalue="JUnit.RaoGasStationTest.testBuyGasNormal" />
+        <item itemvalue="JUnit.RaoGasStationTest.testSetAndGetPrice" />
+        <item itemvalue="JUnit.RaoGasStationTest.testBuyGasTooExpensiveException" />
+        <item itemvalue="JUnit.RaoGasStationTest.testBuyGasNotEnoughGasException" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1715082385113</updated>
       <workItem from="1715082386232" duration="981000" />
-      <workItem from="1715100884584" duration="13246000" />
+      <workItem from="1715100884584" duration="13627000" />
+      <workItem from="1715195681523" duration="9397000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -100,7 +169,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715104253675</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First edition, untested">
+      <option name="closed" value="true" />
+      <created>1715126926611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715126926611</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First edition, untested">
+      <option name="closed" value="true" />
+      <created>1715126960535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715126960535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="First edition, untested" />
+    <option name="LAST_COMMIT_MESSAGE" value="First edition, untested" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
