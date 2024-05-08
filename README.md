@@ -23,21 +23,21 @@
 
 Compile the program using the following command:
 
-``bash
+```bash
 javac RaoGasStation.java
-``
+```
 
 ### Running Tests
 
 The project uses JUnit 5 for unit testing. Execute the tests with the following Maven command:
 
-``bash
+```bash
 mvn test
-``
+```
 
 Ensure your `pom.xml` file includes the dependency for JUnit 5:
 
-``xml
+```xml
 <dependencies>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
@@ -46,7 +46,7 @@ Ensure your `pom.xml` file includes the dependency for JUnit 5:
         <scope>test</scope>
     </dependency>
 </dependencies>
-``
+```
 
 ## Testing
 
