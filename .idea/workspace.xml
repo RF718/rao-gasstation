@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f72276-e750-4bbf-bcf5-8d044e28f5b2" name="Changes" comment="Changes" />
+    <list default="true" id="89f72276-e750-4bbf-bcf5-8d044e28f5b2" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/raoGasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/RaoGasStation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +59,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/MyProject/Java/java-gasstation_assessment/rao-gasstation/src/main/java/net/bigpoint/assessment/Main.java",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715082385113</updated>
       <workItem from="1715082386232" duration="981000" />
-      <workItem from="1715100884584" duration="2190000" />
+      <workItem from="1715100884584" duration="13246000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -85,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715102591444</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1715104253675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715104253675</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
