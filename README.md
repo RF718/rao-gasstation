@@ -14,7 +14,7 @@
 
 ## Prerequisites
 
-- Java JDK 11 or higher
+- Java JDK 10 or higher
 - Maven (for building and running tests)
 
 ## Building and Running
